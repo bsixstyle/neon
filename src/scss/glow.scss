@@ -1,0 +1,34 @@
+
+.glowtext {
+    color: $white;
+    -webkit-animation: glowtext 1s ease-in-out infinite alternate;
+    -moz-animation: glowtext 1s ease-in-out infinite alternate;
+    animation: glowtext 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowtext {
+    from {
+      text-shadow: 0 0 10px $white, 0 0 20px $white, 0 0 30px $white, 0 0 40px $lighter,
+        0 0 70px $lighter, 0 0 80px $lighter, 0 0 100px $lighter, 0 0 150px $lighter;
+    }
+    to {
+      text-shadow: 0 0 5px $white, 0 0 10px $white, 0 0 15px $white, 0 0 20px $turtoise,
+        0 0 35px$turtoise, 0 0 40px $turtoise, 0 0 50px $turtoise, 0 0 75px $turtoise;
+    }
+  }
+  
+  .glowbox {
+    -webkit-animation: glowbox 1s ease-in-out infinite alternate;
+    -moz-animation: glowbox 1s ease-in-out infinite alternate;
+    animation: glowbox 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowbox {
+    from {
+      box-shadow: 0px 0px 0px 1px $lighter, 0px 0px 5px 5px  $lighter;
+    }
+    to {
+      box-shadow: 0px 0px 0px 2px $turtoise, 0px 0px 10px 10px  $turtoise;
+    }
+  }
+  

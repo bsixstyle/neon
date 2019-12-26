@@ -1,0 +1,52 @@
+@import "./import/variable";
+
+[type="text"],
+[type="tel"],
+[type="number"],
+[type="date"],
+select,
+textarea {
+  border: $border $light;
+  padding: $padding;
+  outline: none;
+  background-color: $white;
+  width: 100%;
+  &:focus,
+  &:active {
+    border-color: $turtoise;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    border: $border $lighter;
+    background: transparent;
+  }
+
+  &:read-only {
+    cursor: pointer;
+  }
+
+  &:invalid {
+    border: $border lighten($red, 20);
+  }
+}
+
+[type="checkbox"],
+[type="radio"] {
+  margin-right: 5px;
+  &:disabled {
+    cursor: not-allowed;
+
+    & + label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}

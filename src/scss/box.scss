@@ -1,0 +1,5 @@
+@import "./import/variable";
+.box {
+    padding:$padding;
+    border-radius:$border-radius;
+}

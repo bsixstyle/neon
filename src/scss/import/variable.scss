@@ -1,0 +1,80 @@
+//colors
+$turtoise: #00c4a3;
+$violet: #9b4dca;
+$blue: #3498db;
+$orange: #ffdf60;
+$red: #ff8375;
+$green: #69da6d;
+$dark: #666;
+$white: #fff;
+$black: #000000;
+$darker: darken($dark, 10%);
+$lighter: #e6e3e3;
+$light: darken($lighter, 10%);
+
+//font
+$font: Arial, sans-serif;
+$font-normal: 16px;
+$font-big: 38px;
+
+//media query
+$desktop: 720px;
+$ipad: 770px;
+
+// grid variable
+$columns: 12;
+
+$button-hover: inset 0 0 0 99em rgba($white, 0.3);
+$button-click: inset 0 0 0 99em rgba($lighter, 0.3);
+
+// effect
+$shadow: 0 0 2px 0;
+
+$text-shadow:0 0 2px;
+
+//padder
+$padding: 6px; //$font-normal;
+
+//radius
+$border-radius: 0px;
+
+//border value
+$border: 1px solid;
+
+$colors: (
+  turtoise:$turtoise,
+  orange: $orange,
+  red: $red,
+  green: $green
+);
+
+
+//mixin
+@mixin color($color) {
+  background: $color;
+  @if $color == $light or $color == $orange or $color == $white {
+    * {
+      color : $dark;
+    }
+    color: $dark;
+  } @else {
+    color: $white;
+    * {
+      color : $white;
+    }
+  }
+}
+
+
+//transform slide
+@mixin slideDown($value) {
+  transform: scaleY($value);
+
+  @if $value == 0 {
+    @include fromTop();
+  } 
+}
+
+@mixin fromTop() {
+  transform-origin: top;
+}

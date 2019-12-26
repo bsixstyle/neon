@@ -1,0 +1,56 @@
+@import "./import/variable";
+
+%dropdown {
+  position: relative;
+  label {
+    cursor: pointer;
+  }
+
+  [type="checkbox"] {
+    display: none;
+  }
+
+  ul, div {
+    list-style: none;
+    position: absolute;
+    background: white;
+    left: 0;
+    z-index: 2;
+    padding: 5px;
+    margin: 1px 0;
+    display:block;
+    @include slideDown(0);
+    li {
+      margin: 0;
+      padding: 0;
+      a {
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+
+  
+  [type="checkbox"] {
+    &:checked ~ {
+      ul, div {
+        @include slideDown(1);
+      }
+    }
+  }
+}
+
+
+.dropdown, .collapse {
+  @extend %dropdown;
+}
+
+.collapse {
+  [type="checkbox"] {
+    &:checked ~ {
+      ul, div {
+        position : inherit;
+      }
+    }
+  }
+}

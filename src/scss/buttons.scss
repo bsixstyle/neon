@@ -1,0 +1,30 @@
+@import "./import/variable";
+
+button,
+.button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  cursor: pointer;
+  padding: $padding $padding;
+  border-radius: $border-radius;
+  font-size: $font-normal;
+  outline: none;
+  background: $turtoise;
+  color:$white;
+  border:none;
+  &:focus,
+  &:hover {
+    box-shadow: $button-hover;
+  }
+
+  &:active {
+    box-shadow: $button-click;
+  }
+
+  &:disabled {
+    box-shadow: $button-click;
+    background: $light;
+    cursor: not-allowed;
+  }
+}

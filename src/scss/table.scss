@@ -1,0 +1,50 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    td {
+      padding: $padding;
+      border-bottom: $border $light;
+      vertical-align: top;
+    }
+  
+    th {
+      padding: $padding;
+      border-bottom: $border $light;
+      font-style: bold;
+      text-align: left;
+      vertical-align: top;
+    }
+  }
+  
+  @media screen and (max-width: $desktop) {
+    table.responsive {
+      border: 0;
+      tr {
+        display: block;
+        
+        margin-bottom: 5px;
+        th {
+          display: none;
+        }
+  
+        td {
+          display: block;
+          width:100%;
+        }
+  
+        td::before {
+          content: attr(data-label);
+          font-weight: bold;
+          float:left;
+          width:100%;
+          display:block;
+        }
+      }
+  
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  

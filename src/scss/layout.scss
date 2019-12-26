@@ -1,0 +1,101 @@
+@import "./import/variable";
+
+
+#menu-neon {
+  margin-left: -160px;
+  width: 160px;
+  position: fixed;
+  display: block;
+  background:  $darker;
+  color:$lighter;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  box-shadow: $shadow;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 1%;
+  padding-right: 1%;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    display:block;
+    width:100%;
+    color: $light;
+    &:focus, &:active {
+      text-decoration: underline;
+    }
+
+    & :visited {
+      color : $dark;
+    }
+  }
+}
+
+#main {
+  left: 0px;
+  position: relative;
+}
+
+.overlay {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: $white;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu-sidebar {
+  &:checked {
+    ~ .navbar.fixed {
+      right: -160px !important;
+      left: 160px !important;
+    }
+
+    ~ #menu-neon {
+      left: 160px;
+    }
+
+    ~ #main {
+      position: relative;
+      left: 160px;
+    }
+
+    ~ #menu-overlay {
+      visibility: visible;
+      opacity: 0.3;
+      left: 160px;
+    }
+
+    ~ div .navbar {
+      right: -160px;
+      left: 160px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  #main {
+    position: relative;
+    margin-left: 160px;
+  }
+  #menu-neon {
+    left: 160px;
+  }
+  #menu-burger {
+    display: none;
+  }
+
+  #menu-overlay {
+    visibility: hidden;
+  }
+}
+

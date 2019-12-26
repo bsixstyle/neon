@@ -1,0 +1,18 @@
+@import "./import/variable";
+* {
+  font-family: $font;
+}
+
+body {
+  margin: 0;
+}
+
+*.big {
+  font-size: $font-big;
+}
+
+@each $type, $value in $colors {
+  .#{$type} {
+    @include color($value);
+  }
+}

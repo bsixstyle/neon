@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.link {
+  background: linear-gradient(
+    to top,
+    rgba($light, 0.8) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-size: 100% 200%;
+  background-position: 0 10%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: inherit;
+  transition: background-position 0.1s cubic-bezier(0.64, 0.09, 0.08, 1);
+  will-change: background-position;
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    background-position: 0 100%;
+  }
+}
