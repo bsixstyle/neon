@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59b651b0b001a9830fcfb2c30523e579",
+    "revision": "4f233ccc939ef825be7679aa72d3eeb4",
     "url": "/neon/index.html"
   },
   {
-    "revision": "5108475f54ba1394cbeb",
+    "revision": "488fcda1c5422d9f5556",
     "url": "/neon/static/css/main.7c9baceb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/neon/static/js/2.34bcea92.chunk.js.LICENSE"
   },
   {
-    "revision": "5108475f54ba1394cbeb",
-    "url": "/neon/static/js/main.5571820e.chunk.js"
+    "revision": "488fcda1c5422d9f5556",
+    "url": "/neon/static/js/main.439a91f0.chunk.js"
   },
   {
     "revision": "6b156debbf3b114fa089",
