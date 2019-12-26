@@ -3,13 +3,14 @@ function SidebarEx() {
   return (
     <div id="sidebar">
       <h1>Sidebar</h1>
-      {/* <iframe
-        src="https://codesandbox.io/embed/bsix-sidebar-menu-uo7zq?fontsize=14&hidenavigation=1&theme=dark"
+
+      <iframe
+        src="https://codesandbox.io/embed/neon-sidebar-f41bn?fontsize=14&hidenavigation=1&theme=dark"
         style={_style}
-        title="bsix sidebar menu"
+        title="neon-sidebar"
         allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-      ></iframe> */}
+      ></iframe>
     </div>
   );
 }

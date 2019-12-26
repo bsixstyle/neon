@@ -9,7 +9,7 @@ function Home() {
           download here
         </a>
         &nbsp;or take the scss files &nbsp;
-        <a className="link red" target="_blank"  href="https://github.com/bsixstyle/neon/src/scss">
+        <a className="link red" target="_blank"  href="https://github.com/bsixstyle/neon/tree/master/src/scss">
           here
         </a>
       </p>
