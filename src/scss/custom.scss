@@ -1,0 +1,59 @@
+@import "./import/variable.scss";
+@media (max-width: $desktop) {
+    .navbar:not(.navbarex) {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      background: $white;
+      width: 100%;
+    }
+  
+    .navbar:not(.navbarex)  + * {
+      padding-top: 4em;
+    }
+  }
+  
+  hr {
+    margin: 2em 0;
+    border-bottom: 3px dashed $dark;
+  }
+  
+  .box.lighter {
+    background : $lighter;
+    border-top: 0.5px dashed $dark;
+    color:$dark;
+  }
+  
+  .navbar.turtoise {
+    background: $turtoise;
+    color: $white;
+    * {
+      color : $white;
+    }
+  
+    border-bottom: none;
+  }
+  
+  
+  
+  a.link.red {
+    background: linear-gradient(
+      to top,
+      rgba($red, 0.8) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background-size: 100% 200%;
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: inherit;
+    transition: background-position 0.1s cubic-bezier(0.64, 0.09, 0.08, 1);
+    will-change: background-position;
+    &:active {
+      color: inherit;
+    }
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+  

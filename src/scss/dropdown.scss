@@ -46,6 +46,9 @@
 }
 
 .collapse {
+  ul, div {
+    background:none;
+  }
   [type="checkbox"] {
     &:checked ~ {
       ul, div {
