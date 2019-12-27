@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neon/static/css/main.7c9baceb.chunk.css",
+    "main.css": "/neon/static/css/main.427e8867.chunk.css",
     "main.js": "/neon/static/js/main.d97cb379.chunk.js",
     "main.js.map": "/neon/static/js/main.d97cb379.chunk.js.map",
     "runtime-main.js": "/neon/static/js/runtime-main.416287b6.js",
@@ -8,15 +8,15 @@
     "static/js/2.34bcea92.chunk.js": "/neon/static/js/2.34bcea92.chunk.js",
     "static/js/2.34bcea92.chunk.js.map": "/neon/static/js/2.34bcea92.chunk.js.map",
     "index.html": "/neon/index.html",
-    "precache-manifest.ddf7a39815048b168dd74393a9a34063.js": "/neon/precache-manifest.ddf7a39815048b168dd74393a9a34063.js",
+    "precache-manifest.2b50f4fbcb74a05712ab63648367bc98.js": "/neon/precache-manifest.2b50f4fbcb74a05712ab63648367bc98.js",
     "service-worker.js": "/neon/service-worker.js",
-    "static/css/main.7c9baceb.chunk.css.map": "/neon/static/css/main.7c9baceb.chunk.css.map",
+    "static/css/main.427e8867.chunk.css.map": "/neon/static/css/main.427e8867.chunk.css.map",
     "static/js/2.34bcea92.chunk.js.LICENSE": "/neon/static/js/2.34bcea92.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.416287b6.js",
     "static/js/2.34bcea92.chunk.js",
-    "static/css/main.7c9baceb.chunk.css",
+    "static/css/main.427e8867.chunk.css",
     "static/js/main.d97cb379.chunk.js"
   ]
 }
